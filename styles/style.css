@@ -1,3 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.price_title{
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(113, 111, 111);
+}

@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alexa Mart</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <!-- tailwindCSS and daisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- style file -->
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body class="font-sans">
-
   <!-- header area start -->
   <header class="container mx-auto p-5">
     <nav class="flex flex-col md:flex-row items-center md:justify-between">
       <a href="#">
-        <h3 class="text-gray-600 hover:text-cyan-900 text-2xl md:text-5xl uppercase font-bold">Alexa Mart</h3>
+        <h3 class="text-gray-600 hover:text-cyan-900 text-2xl md:text-5xl uppercase font-bold">
+          Alexa Mart
+        </h3>
       </a>
       <ul class="flex gap-5">
-        <li class="text-xl md:text-2xl hover:text-cyan-900 text-gray-600"><a href="#">Products</a></li>
-        <li class="text-xl md:text-2xl hover:text-cyan-900 text-gray-600"><a href="#">Services</a></li>
+        <li class="text-xl md:text-2xl hover:text-cyan-900 text-gray-600">
+          <a href="#">Products</a>
+        </li>
+        <li class="text-xl md:text-2xl hover:text-cyan-900 text-gray-600">
+          <a href="#">Services</a>
+        </li>
       </ul>
     </nav>
 
-    <div class="flex text-center md:text-left flex-col md:flex-row gap-5 my-20">
+    <div class="flex text-center md:text-left flex-col md:flex-row gap-5 mt-16">
       <div class="space-y-5">
-        <h1 class="text-3xl md:text-5xl font-bold text-gray-600">Best Products Within Budget</h1>
-        <p class="text-xl text-gray-500">Efficiently incentivize diverse methods of empowerment and goal-oriented
-          networks. Globally promote
-          multifunctional models after emerging interfaces.</p>
-        <button class="btn py-4 px-6 bg-gray-200 rounded-xl text-gray-500 font-semibold">Shop Now</button>
+        <h1 class="text-3xl md:text-5xl font-bold text-gray-600">
+          Best Products Within Budget
+        </h1>
+        <p class="text-xl text-gray-500">
+          Efficiently incentivize diverse methods of empowerment and
+          goal-oriented networks. Globally promote multifunctional models
+          after emerging interfaces.
+        </p>
+        <button class="btn py-4 px-6 bg-gray-200 rounded-xl text-gray-500 font-semibold">
+          Shop Now
+        </button>
       </div>
       <div>
-        <img src="images/hero-img.jpeg" alt="">
+        <img src="images/hero-img.jpeg" alt="hero image" loading="lazy" />
       </div>
     </div>
   </header>
@@ -39,7 +55,51 @@
 
   <!-- main area start -->
   <main class="container mx-auto p-5">
-
+    <!-- featured product -->
+    <section class="my-24 text-center">
+      <h3 class="text-gray-600 hover:text-cyan-900 text-2xl md:text-5xl uppercase font-bold">Featured Products</h3>
+      <!-- grid container -->
+      <div class="mt-14 grid justify-items-center gap-5 md:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+      *:rounded-2xl *:p-3 *:bg-gray-200 *:max-w-96 *:min-h-96
+       *:flex *:flex-col *:justify-center *:items-center">
+        <!-- grid card one -->
+        <div>
+          <img class="rounded-full w-4/5" src="images/airpod.jpeg" alt="airpod" loading="lazy">
+          <h4 class="price_title">Price: $40</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+        <!-- grid card tow -->
+        <div>
+          <img class="rounded-full w-4/5" src="images/charger.jpeg" alt="charger" loading="lazy">
+          <h4 class="price_title">Price: $50</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+        <!-- grid card three -->
+        <div>
+          <img class="rounded-full w-4/5" src="images/earphone.jpeg" alt="earphone" loading="lazy">
+          <h4 class="price_title">Price: $40</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+        <!-- grid card four -->
+        <div>
+          <img class="rounded-full w-4/5" src="images/new-pod.jpeg" alt="new-airpod" loading="lazy">
+          <h4 class="price_title">Price: $60</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+        <!-- grid card five -->
+        <div>
+          <img class="rounded-full w-4/5" src="images/wireless.jpeg" alt="wireless" loading="lazy">
+          <h4 class="price_title">Price: $70</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+        <!-- grid card six -->
+        <div>
+          <img class="rounded-full w-4/5" src="images/pod-case.jpeg" alt="airpod-case" loading="lazy">
+          <h4 class="price_title">Price: $30</h4>
+          <button class="btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- main area end -->
 
@@ -48,7 +108,6 @@
 
   </footer>
   <!-- footer area end -->
-
 </body>
 
 </html>
